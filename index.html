@@ -1,233 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Implementación Humand · Kick Off con VASA</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Humand + VASA | Kick Off</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <div class="deck-shell">
-    <header class="topbar">
-      <div class="brand-pair">
-        <div class="humand-logo" aria-label="Humand logo">
-          <span class="humand-mark">h</span>
-          <span class="humand-word">humand</span>
-        </div>
-        <span class="x-mark">×</span>
-        <div class="vasa-logo" aria-label="VASA logo">VASA</div>
+  <main class="deck" id="deck">
+    <section class="slide cover">
+      <div class="topbar">
+        <div class="brand"><img src="humand-logo.png" alt="Humand" /><span>humand</span></div>
+        <div class="pill">Kick Off</div>
       </div>
-      <div class="topbar-meta">Kick Off · Implementación</div>
-    </header>
+      <div class="cover-grid">
+        <div>
+          <p class="eyebrow">Implementación</p>
+          <h1>Humand + VASA</h1>
+          <p class="lead">Inicio del proceso y primer espacio de trabajo conjunto.</p>
+        </div>
+        <div class="intro-card">
+          <p class="mini-title">Felipe Varela</p>
+          <h2>Onboarding</h2>
+          <p>Primer punto de contacto para guiarlos durante la implementación.</p>
+        </div>
+      </div>
+      <div class="speaker-note">
+        <strong>Apertura:</strong> agradecer, presentarte y marcar dinámica abierta: “me pueden interrumpir, preguntar o pedirme que vuelva a explicar”.
+      </div>
+    </section>
 
-    <main class="slides" id="slides">
-      <!-- Slide 1 -->
-      <section class="slide hero-slide" id="slide-1">
-        <div class="hero-copy">
-          <div class="eyebrow">Proyecto de implementación</div>
-          <h1>Implementación Humand</h1>
-          <h2>Kick Off con VASA</h2>
-          <p>Primer alineamiento para lanzar una comunidad útil, simple y adoptable para los 600 colaboradores.</p>
-          <div class="hero-actions">
-            <span>Discovery</span>
-            <span>Configuración</span>
-            <span>Lanzamiento</span>
-          </div>
+    <section class="slide">
+      <div class="topbar"><div class="brand"><img src="humand-logo.png" alt="Humand" /><span>humand</span></div><div class="counter">02</div></div>
+      <div class="split">
+        <div>
+          <p class="eyebrow">Inicio del proceso</p>
+          <h2>Hoy empezamos a ordenar el proyecto.</h2>
+          <p class="body-copy">La idea es entender dónde estamos parados, cómo vamos a trabajar y qué necesitamos para avanzar.</p>
         </div>
-        <div class="product-mock">
-          <div class="phone-card">
-            <div class="phone-top"></div>
-            <div class="post-card wide"></div>
-            <div class="post-row"><span></span><span></span><span></span></div>
-            <div class="post-card"></div>
-            <div class="post-card short"></div>
-            <div class="dock"><i></i><i></i><i></i><i></i></div>
-          </div>
-          <div class="floating-chip chip-one">App</div>
-          <div class="floating-chip chip-two">Admin</div>
-          <div class="floating-chip chip-three">Adopción</div>
+        <div class="agenda-card">
+          <h3>Agenda</h3>
+          <ol>
+            <li>Contexto de VASA</li>
+            <li>Objetivo y éxito</li>
+            <li>Plan de implementación</li>
+            <li>Accesos y adopción</li>
+            <li>Próximos pasos</li>
+          </ol>
         </div>
-      </section>
+      </div>
+      <div class="question-box">Para empezar: ¿qué los llevó a elegir Humand y qué esperan resolver en esta primera etapa?</div>
+    </section>
 
-      <!-- Slide 2 -->
-      <section class="slide" id="slide-2">
-        <div class="section-heading">
-          <span class="number">01</span>
-          <div>
-            <h2>Agenda de hoy</h2>
-            <p>Una reunión para alinear, priorizar y salir con próximos pasos concretos.</p>
-          </div>
-        </div>
-        <div class="agenda-grid">
-          <article><b>Conocer contexto</b><span>Cómo trabaja VASA hoy</span></article>
-          <article><b>Definir éxito</b><span>Qué esperamos lograr</span></article>
-          <article><b>Planificar implementación</b><span>Etapas, roles y tiempos</span></article>
-          <article><b>Alinear accesos</b><span>App, web y admin</span></article>
-          <article><b>Cerrar próximos pasos</b><span>Responsables y fechas</span></article>
-        </div>
-      </section>
+    <section class="slide">
+      <div class="topbar"><div class="brand"><img src="humand-logo.png" alt="Humand" /><span>humand</span></div><div class="counter">03</div></div>
+      <p class="eyebrow">Objetivo de implementación</p>
+      <h2>Que Humand sea útil antes, durante y después del lanzamiento.</h2>
+      <div class="two-cards">
+        <article class="metric-card">
+          <span class="tag">Antes del lanzamiento</span>
+          <h3>Plataforma preparada</h3>
+          <p>Usuarios cargados, administradores definidos, capacitación y contenido inicial listo.</p>
+        </article>
+        <article class="metric-card dark">
+          <span class="tag">Post lanzamiento</span>
+          <h3>Adopción real</h3>
+          <p>Usuarios activados, actividad en comunidad, uso de módulos y feedback accionable.</p>
+        </article>
+      </div>
+      <div class="question-box">Desde VASA: ¿qué métricas o fechas usarían para considerar exitosa la implementación?</div>
+    </section>
 
-      <!-- Slide 3 -->
-      <section class="slide" id="slide-3">
-        <div class="section-heading">
-          <span class="number">02</span>
-          <div>
-            <h2>Punto de partida</h2>
-            <p>Antes de configurar Humand, entendemos cómo funciona VASA.</p>
-          </div>
-        </div>
-        <div class="four-cards">
-          <article><span class="icon">🏭</span><h3>Estructura</h3><p>Áreas, sedes, turnos y perfiles.</p></article>
-          <article><span class="icon">📣</span><h3>Comunicación</h3><p>Canales actuales, dolores y alcance.</p></article>
-          <article><span class="icon">⚙️</span><h3>Procesos</h3><p>Qué ordenar o digitalizar primero.</p></article>
-          <article><span class="icon">🧩</span><h3>Datos</h3><p>Base de usuarios, sistemas y responsables.</p></article>
-        </div>
-        <div class="question-strip">Pregunta guía: ¿qué problema debería resolver Humand primero en VASA?</div>
-      </section>
+    <section class="slide">
+      <div class="topbar"><div class="brand"><img src="humand-logo.png" alt="Humand" /><span>humand</span></div><div class="counter">04</div></div>
+      <p class="eyebrow">Plan de implementación</p>
+      <h2>Un flujo simple para avanzar con foco.</h2>
+      <div class="timeline">
+        <div><span>01</span><h3>Discovery</h3><p>Procesos, sistemas y prioridades.</p></div>
+        <div><span>02</span><h3>Configuración</h3><p>Usuarios, permisos, grupos y módulos.</p></div>
+        <div><span>03</span><h3>Comunicación</h3><p>Mensaje, canales, líderes y campaña.</p></div>
+        <div><span>04</span><h3>Lanzamiento</h3><p>Go-live, primeros ingresos y soporte.</p></div>
+        <div><span>05</span><h3>Adopción</h3><p>Medición, feedback y expansión.</p></div>
+      </div>
+      <div class="speaker-note">Idea clave: la adopción no sucede sola. La comunicación es parte del proyecto, no un detalle final.</div>
+    </section>
 
-      <!-- Slide 4 -->
-      <section class="slide" id="slide-4">
-        <div class="section-heading">
-          <span class="number">03</span>
-          <div>
-            <h2>Objetivo de implementación</h2>
-            <p>Que Humand no sea una app más: que sea un canal central de trabajo.</p>
-          </div>
-        </div>
-        <div class="big-statement">Conectar, informar y acompañar a los colaboradores de VASA desde una única comunidad digital.</div>
-        <div class="success-grid">
-          <article><b>Antes del lanzamiento</b><span>Usuarios cargados · segmentaciones definidas · admins capacitados · contenido inicial listo</span></article>
-          <article><b>Después del lanzamiento</b><span>Usuarios activados · actividad visible · módulos usados · feedback accionable</span></article>
-        </div>
-      </section>
+    <section class="slide">
+      <div class="topbar"><div class="brand"><img src="humand-logo.png" alt="Humand" /><span>humand</span></div><div class="counter">05</div></div>
+      <p class="eyebrow">Primera ola sugerida</p>
+      <h2>Empezar simple, valioso y medible.</h2>
+      <div class="three-cards">
+        <article><div class="icon">01</div><h3>Base organizacional</h3><p>Usuarios, grupos, sedes, roles, permisos y segmentaciones.</p></article>
+        <article><div class="icon">02</div><h3>Comunicación interna</h3><p>Muro, noticias, notificaciones y comunicados segmentados.</p></article>
+        <article><div class="icon">03</div><h3>Conocimiento</h3><p>Librería inicial con políticas, beneficios, seguridad y procedimientos.</p></article>
+      </div>
+      <div class="question-box">Recomendación, no determinación: ¿qué módulo o área consideran crítica para el primer lanzamiento?</div>
+    </section>
 
-      <!-- Slide 5 -->
-      <section class="slide" id="slide-5">
-        <div class="section-heading">
-          <span class="number">04</span>
-          <div>
-            <h2>Plan de implementación</h2>
-            <p>Un camino simple para llegar al go-live con foco en adopción.</p>
-          </div>
-        </div>
-        <div class="timeline">
-          <article><span>1</span><b>Discovery</b><p>Procesos, usuarios, sistemas y prioridades.</p></article>
-          <article><span>2</span><b>Configuración</b><p>Usuarios, permisos, grupos, módulos y contenido.</p></article>
-          <article><span>3</span><b>Comunicación</b><p>Campaña interna, líderes, instructivos y QR.</p></article>
-          <article><span>4</span><b>Lanzamiento</b><p>Go-live, soporte y seguimiento de activación.</p></article>
-          <article><span>5</span><b>Adopción</b><p>Métricas, mejoras y expansión de módulos.</p></article>
-        </div>
-      </section>
+    <section class="slide closing">
+      <div class="topbar"><div class="brand"><img src="humand-logo.png" alt="Humand" /><span>humand</span></div><div class="counter">06</div></div>
+      <p class="eyebrow">Próximos pasos</p>
+      <h2>Salir de esta reunión con acciones claras.</h2>
+      <div class="next-grid">
+        <div><span>1</span><p>Definir administradores y validar base de usuarios.</p></div>
+        <div><span>2</span><p>Confirmar estructura: áreas, sedes, turnos, roles y líderes.</p></div>
+        <div><span>3</span><p>Priorizar módulos de la primera ola con VASA.</p></div>
+        <div><span>4</span><p>Agendar discovery profundo y weekly meetings.</p></div>
+        <div><span>5</span><p>Armar cronograma tentativo con responsables y fechas.</p></div>
+        <div><span>6</span><p>Canal ágil para dudas rápidas, además del seguimiento formal.</p></div>
+      </div>
+      <div class="closing-line">Lanzar simple · medir rápido · escalar con foco</div>
+    </section>
+  </main>
 
-      <!-- Slide 6 -->
-      <section class="slide" id="slide-6">
-        <div class="section-heading">
-          <span class="number">05</span>
-          <div>
-            <h2>Primera ola sugerida</h2>
-            <p>Arrancar con alto impacto, baja fricción y métricas claras.</p>
-          </div>
-        </div>
-        <div class="wave-layout">
-          <article><small>Base</small><h3>Usuarios + segmentación</h3><p>Áreas, turnos, sedes, roles y permisos.</p></article>
-          <article><small>Comunicación</small><h3>Muro + noticias</h3><p>Comunicados oficiales y segmentados.</p></article>
-          <article><small>Conocimiento</small><h3>Librería inicial</h3><p>Políticas, beneficios, seguridad y procedimientos.</p></article>
-        </div>
-        <div class="note-card">Siguiente ola: solicitudes, documentos, licencias, reconocimientos o learning según prioridad validada.</div>
-      </section>
-
-      <!-- Slide 7 -->
-      <section class="slide" id="slide-7">
-        <div class="section-heading">
-          <span class="number">06</span>
-          <div>
-            <h2>Después del lanzamiento</h2>
-            <p>El go-live no es el cierre: es el inicio de la adopción.</p>
-          </div>
-        </div>
-        <div class="success-path">
-          <div class="path-card"><b>Implementación</b><span>Configuramos · capacitamos · lanzamos</span></div>
-          <div class="arrow">→</div>
-          <div class="path-card highlighted"><b>Success</b><span>Medimos · optimizamos · escalamos</span></div>
-        </div>
-        <div class="metrics-row">
-          <span>Activación</span><span>Uso</span><span>Feedback</span><span>Mejora continua</span>
-        </div>
-      </section>
-
-      <!-- Slide 8 -->
-      <section class="slide" id="slide-8">
-        <div class="section-heading">
-          <span class="number">07</span>
-          <div>
-            <h2>Accesos a Humand</h2>
-            <p>Tres puertas de entrada para distintos perfiles de uso.</p>
-          </div>
-        </div>
-        <div class="access-grid">
-          <article><div class="device-icon">📱</div><h3>App mobile</h3><p>Clave para colaboradores operativos y de planta.</p></article>
-          <article><div class="device-icon">💻</div><h3>Versión web</h3><p>Acceso desde computadora para perfiles administrativos.</p></article>
-          <article><div class="device-icon">🛠️</div><h3>Panel admin</h3><p>Gestión de usuarios, contenidos, permisos y métricas.</p></article>
-        </div>
-      </section>
-
-      <!-- Slide 9 -->
-      <section class="slide" id="slide-9">
-        <div class="section-heading">
-          <span class="number">08</span>
-          <div>
-            <h2>Próximos pasos</h2>
-            <p>Salir de esta reunión con dueños, fechas y entregables claros.</p>
-          </div>
-        </div>
-        <div class="next-steps">
-          <article><span>01</span><b>Definir sponsor y project owner</b></article>
-          <article><span>02</span><b>Compartir base de usuarios</b></article>
-          <article><span>03</span><b>Validar estructura y segmentaciones</b></article>
-          <article><span>04</span><b>Priorizar módulos de primera ola</b></article>
-          <article><span>05</span><b>Agendar discovery y weekly meetings</b></article>
-          <article><span>06</span><b>Enviar minuta + cronograma tentativo</b></article>
-        </div>
-        <div class="closing-line">Objetivo: lanzar simple, medir rápido y escalar con foco.</div>
-      </section>
-    </main>
-
-    <nav class="nav-controls" aria-label="Slide navigation">
-      <button id="prev" type="button">←</button>
-      <span id="counter">1 / 9</span>
-      <button id="next" type="button">→</button>
-    </nav>
-  </div>
-
+  <div class="nav-hint">Usá ← → o scroll para navegar</div>
   <script>
-    const slides = Array.from(document.querySelectorAll('.slide'));
-    const counter = document.getElementById('counter');
-    let index = 0;
-
-    function goToSlide(nextIndex) {
-      index = Math.max(0, Math.min(slides.length - 1, nextIndex));
-      slides[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-      counter.textContent = `${index + 1} / ${slides.length}`;
-    }
-
-    document.getElementById('prev').addEventListener('click', () => goToSlide(index - 1));
-    document.getElementById('next').addEventListener('click', () => goToSlide(index + 1));
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight') goToSlide(index + 1);
-      if (e.key === 'ArrowLeft') goToSlide(index - 1);
-    });
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          index = slides.indexOf(entry.target);
-          counter.textContent = `${index + 1} / ${slides.length}`;
-        }
-      });
-    }, { root: document.querySelector('.slides'), threshold: 0.6 });
-    slides.forEach(slide => observer.observe(slide));
+    const slides = [...document.querySelectorAll('.slide')];
+    let current = 0;
+    function go(i){ current = Math.max(0, Math.min(slides.length-1, i)); slides[current].scrollIntoView({behavior:'smooth'}); }
+    window.addEventListener('keydown', e => { if(e.key==='ArrowRight') go(current+1); if(e.key==='ArrowLeft') go(current-1); });
+    const obs = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting) current = slides.indexOf(entry.target); }), {threshold:.6});
+    slides.forEach(s => obs.observe(s));
   </script>
 </body>
 </html>
